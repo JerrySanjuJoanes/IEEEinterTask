@@ -17,11 +17,11 @@ function Card({video}) {
     const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
 
     
-    return `${days} d  ${hours}h  ${minutes} min ago`;
+    return `${days} days`;
   };
 
   return (
-    <div className="h-[320px] w-[350px]  overflow-hidden p-1 hover:bg-gray-700 rounded-2xl duration-500 hover:shadow-sm hover:shadow-orange-600 cursor-pointer">
+    <div className="h-[320px] md:w-[350px] w-[285px] overflow-hidden p-1 hover:bg-gray-700 rounded-2xl duration-500 hover:shadow-sm hover:shadow-orange-600 cursor-pointer">
         <div className='relative'>
             <img className="h-[70%] bg-slate-100 rounded-3xl overflow-hidden " src={video.thumbnail} alt="" />
             <p className=" absolute top-3 right-3 bg-slate-400 p-1 rounded-xl opacity-70 text-sm">{video.duration}</p>
