@@ -11,10 +11,10 @@ import { CiCircleQuestion } from "react-icons/ci";
 function SidePanel({ videos, chanelname, setChanelname }) {
   const [activeChannel, setActiveChannel] = useState(null);
 
-  // Get unique channel names
+  
   const uniqueChannels = Array.from(new Set(videos.map(video => video.channelName)));
 
-  // Handle channel name click
+ 
   const handleChannelClick = (channelName) => {
     // Check if the clicked channel is not one of the non-channel items
     if (!['Home', 'Explore', 'Watch Later', 'Library', 'History', 'Report History', 'Help'].includes(channelName)) {
@@ -29,7 +29,6 @@ function SidePanel({ videos, chanelname, setChanelname }) {
     }
   };
 
-  // Function to render channel items
   const renderChannelItem = (channelName, icon, label) => {
     return (
       <div className={`hover:bg-orange-600 w-[90%] pl-4 rounded-r-[10px] text-lg p-2 text-white flex gap-2 items-center justify-start duration-500 cursor-pointer ${activeChannel === channelName ? 'bg-gray-800' : ''}`} onClick={() => handleChannelClick(channelName)}>

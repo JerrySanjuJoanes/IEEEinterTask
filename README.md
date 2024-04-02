@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +67,49 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
+
+# SearchFeed Web App
+
+## Description:
+
+The SearchFeed Web App is a responsive website built with React.js, designed to filter feeds based on user input, providing search recommendations for enhanced user experience. It utilizes an API provided in the task description to fetch and display feeds. Users can search for specific keywords, filter feeds by category or channel name, and receive real-time search suggestions to refine their search queries.
+
+## Features:
+
+- **Search Bar with Auto-Suggestions:** Users can enter search queries in the search bar, and the app provides real-time suggestions to assist users in refining their search.
+- **Filter by Category:** Users can filter feeds based on predefined categories to narrow down their search results.
+- **Filter by Channel Name:** Users can filter feeds by entering the channel name to view specific content from a particular channel.
+- **Responsive Design:** The web app is designed to be responsive, ensuring optimal user experience across various devices and screen sizes.
+
+## Technologies Used:
+
+- React.js
+- HTML5
+- CSS3 (with media queries for responsiveness)
+- JavaScript (for dynamic functionality)
+- API Integration (to fetch and display feeds)
+
+## API Used:
+
+The web app utilizes the API provided in the task description to fetch and display feeds.
+
+## Installation:
+
+1. Clone the repository to your local machine.
+2. Open the project directory in your code editor.
+3. Run `npm install` to install dependencies.
+4. Run `npm run start` to start the development server and view the web app in a web browser at http://localhost:3000.
+5. only run it in `localhost 3000` it will only work in it
+6. it is hosted in `https://iee-einter-task.vercel.app/` but due to the problem of api it cant fetch data
+
+## Usage:
+
+1. Enter keywords in the search bar to search for specific content.
+2. Use the category dropdown menu to filter feeds by category.
+3. Enter the channel name in the designated field to filter feeds by channel.
+4. Explore the search recommendations provided to refine your search queries.
+
+## Contact:
+
+For inquiries or support regarding the SearchFeed Web App, please contact Jerry Sanju Joanes at jerrysanjujoanes000@gmail.com phone - 9744737096.

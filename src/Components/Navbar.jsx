@@ -12,23 +12,22 @@ import useror from '../images/useror.png';
 function Navbar({ videos, setTitle, title }) {
   const [searchText, setSearchText] = useState('');
   const [searchResults, setSearchResults] = useState([]);
-  const [showSearchResults, setShowSearchResults] = useState(false); // State to toggle search results visibility
+  const [showSearchResults, setShowSearchResults] = useState(false); 
 
-  // Function to handle input change and filter videos
   const handleInputChange = (event) => {
     const inputValue = event.target.value;
     setSearchText(inputValue);
 
-    // Filter videos based on input text
+    
     const filteredResults = videos.filter(video =>
       video.title.toLowerCase().includes(inputValue.toLowerCase())
     );
     setSearchResults(filteredResults);
     setTitle(filteredResults.map(result => result.title));
-    setShowSearchResults(true); // Show search results when typing
+    setShowSearchResults(true); 
   };
 
-  // Function to toggle search results visibility
+
   const toggleSearchResults = () => {
     setShowSearchResults(!showSearchResults);
   };
@@ -68,7 +67,7 @@ function Navbar({ videos, setTitle, title }) {
           </div>
           <div> <img src={useror} alt="" className="h-8 w-8 rounded-full" /></div>
         </div>
-        {/* Display search results as recommendations */}
+       
       </div>
     </div>
   )
